@@ -39,7 +39,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  for (var i = 0; i < cart.length; i++) {
+    if (cart[i].hasOwnProperty(removeitem)) {
+      cart = cart.slice(0, i).concat(cart.slice(i + 1))
+    } 
+  }
+    console.log("That item is not in your cart.")
+
 }
 
 function placeOrder(cardNumber) {
