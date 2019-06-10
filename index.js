@@ -1,5 +1,5 @@
-  return t
-}
+  return t;
+};
 
 var cart = []
 
