@@ -1,5 +1,5 @@
 function addToCart(item) {
- // write your code here
+
  function getRandInt(max, min){
    return Math.floor(Math.random() * (max - min)) + min;
  }
@@ -12,8 +12,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
-  // write your code here cart[i].itemName and cart[i].itemPrice
+
   if(cart.length === 0){
     return ("Your shopping cart is empty.");
   } else if(cart.length === 1) {
@@ -34,7 +33,7 @@ function viewCart() {
 
 
 function total() {
-  // write your code here
+
   let x = 0
   var prices = [];
   var total = 0;
@@ -60,7 +59,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+
   if(cardNumber === null){
     return "Sorry, we don't have a credit card on file for you."
   } else {
